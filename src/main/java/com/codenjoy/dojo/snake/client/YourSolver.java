@@ -59,7 +59,7 @@ public class YourSolver implements Solver<Board> {
         List<Point> path = findShortestPath(head, apple, obstacles);
 
         if (path != null && path.size() > 1) {
-            Point nextPoint = path.get(1); // Вторая точка в пути — следующее движение
+            Point nextPoint = path.get(1);
             return getDirection(head, nextPoint);
         }
 
